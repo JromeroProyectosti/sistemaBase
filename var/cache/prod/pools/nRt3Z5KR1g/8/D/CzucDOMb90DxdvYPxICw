@@ -1,0 +1,128 @@
+<?php //%255BApp%255CEntity%255CClientePotencial%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\ClientePotencial',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\ClientePotencial',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\ClientePotencialRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'formId' => [
+                        'fieldName' => 'formId',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'form_id',
+                    ],
+                    'leadgenId' => [
+                        'fieldName' => 'leadgenId',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'leadgen_id',
+                    ],
+                    'pageId' => [
+                        'fieldName' => 'pageId',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'page_id',
+                    ],
+                    'createdTime' => [
+                        'fieldName' => 'createdTime',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'created_time',
+                    ],
+                    'campos' => [
+                        'fieldName' => 'campos',
+                        'type' => 'json',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'campos',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'form_id' => 'formId',
+                    'leadgen_id' => 'leadgenId',
+                    'page_id' => 'pageId',
+                    'created_time' => 'createdTime',
+                    'campos' => 'campos',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'formId' => 'form_id',
+                    'leadgenId' => 'leadgen_id',
+                    'pageId' => 'page_id',
+                    'createdTime' => 'created_time',
+                    'campos' => 'campos',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'cliente_potencial',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

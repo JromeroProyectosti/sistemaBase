@@ -1,0 +1,133 @@
+<?php //%255BApp%255CEntity%255CEstrategiaJuridica%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\EstrategiaJuridica',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\EstrategiaJuridica',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\EstrategiaJuridicaRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'Nombre' => [
+                        'fieldName' => 'Nombre',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'nombre',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'nombre' => 'Nombre',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'Nombre' => 'nombre',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'estrategia_juridica',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'empresa' => [
+                        'fieldName' => 'empresa',
+                        'joinColumns' => [
+                            [
+                                'name' => 'empresa_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'estrategiaJuridicas',
+                        'targetEntity' => 'App\\Entity\\Empresa',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\EstrategiaJuridica',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'empresa_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'empresa_id' => 'empresa_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'empresa_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'contratos' => [
+                        'fieldName' => 'contratos',
+                        'mappedBy' => 'estrategiaJuridica',
+                        'targetEntity' => 'App\\Entity\\Contrato',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\EstrategiaJuridica',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

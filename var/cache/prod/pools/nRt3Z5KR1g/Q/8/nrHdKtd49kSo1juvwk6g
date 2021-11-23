@@ -1,0 +1,200 @@
+<?php //%255BApp%255CEntity%255CContratoRol%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\ContratoRol',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\ContratoRol',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\ContratoRolRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'nombreRol' => [
+                        'fieldName' => 'nombreRol',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'nombre_rol',
+                    ],
+                    'institucionAcreedora' => [
+                        'fieldName' => 'institucionAcreedora',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'institucion_acreedora',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'nombre_rol' => 'nombreRol',
+                    'institucion_acreedora' => 'institucionAcreedora',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'nombreRol' => 'nombre_rol',
+                    'institucionAcreedora' => 'institucion_acreedora',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'contrato_rol',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'juzgado' => [
+                        'fieldName' => 'juzgado',
+                        'joinColumns' => [
+                            [
+                                'name' => 'juzgado_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'contratoRols',
+                        'targetEntity' => 'App\\Entity\\Juzgado',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ContratoRol',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'juzgado_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'juzgado_id' => 'juzgado_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'juzgado_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'contrato' => [
+                        'fieldName' => 'contrato',
+                        'joinColumns' => [
+                            [
+                                'name' => 'contrato_id',
+                                'unique' => false,
+                                'nullable' => true,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'contratoRols',
+                        'targetEntity' => 'App\\Entity\\Contrato',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ContratoRol',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'contrato_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'contrato_id' => 'contrato_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'contrato_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'abogado' => [
+                        'fieldName' => 'abogado',
+                        'joinColumns' => [
+                            [
+                                'name' => 'abogado_id',
+                                'unique' => false,
+                                'nullable' => false,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'contratoRols',
+                        'targetEntity' => 'App\\Entity\\Usuario',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\ContratoRol',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'abogado_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'abogado_id' => 'abogado_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'abogado_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

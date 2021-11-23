@@ -1,0 +1,152 @@
+<?php //%255BApp%255CEntity%255CVencimiento%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Vencimiento',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Vencimiento',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\VencimientoRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'valMin' => [
+                        'fieldName' => 'valMin',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'val_min',
+                    ],
+                    'valMax' => [
+                        'fieldName' => 'valMax',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'val_max',
+                    ],
+                    'color' => [
+                        'fieldName' => 'color',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'color',
+                    ],
+                    'icono' => [
+                        'fieldName' => 'icono',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'icono',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'val_min' => 'valMin',
+                    'val_max' => 'valMax',
+                    'color' => 'color',
+                    'icono' => 'icono',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'valMin' => 'val_min',
+                    'valMax' => 'val_max',
+                    'color' => 'color',
+                    'icono' => 'icono',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'vencimiento',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'empresa' => [
+                        'fieldName' => 'empresa',
+                        'joinColumns' => [
+                            [
+                                'name' => 'empresa_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => null,
+                        'targetEntity' => 'App\\Entity\\Empresa',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Vencimiento',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'empresa_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'empresa_id' => 'empresa_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'empresa_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,176 @@
+<?php //%255BApp%255CEntity%255CPrivilegioTipousuario%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\PrivilegioTipousuario',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\PrivilegioTipousuario',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\PrivilegioTipousuarioRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'privilegio_tipousuario',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'accion' => [
+                        'fieldName' => 'accion',
+                        'joinColumns' => [
+                            [
+                                'name' => 'accion_id',
+                                'unique' => false,
+                                'nullable' => false,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'privilegioTipousuarios',
+                        'targetEntity' => 'App\\Entity\\Accion',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\PrivilegioTipousuario',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'accion_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'accion_id' => 'accion_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'accion_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'tipousuario' => [
+                        'fieldName' => 'tipousuario',
+                        'joinColumns' => [
+                            [
+                                'name' => 'tipousuario_id',
+                                'unique' => false,
+                                'nullable' => false,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'privilegioTipousuarios',
+                        'targetEntity' => 'App\\Entity\\UsuarioTipo',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\PrivilegioTipousuario',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'tipousuario_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'tipousuario_id' => 'tipousuario_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'tipousuario_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'moduloPer' => [
+                        'fieldName' => 'moduloPer',
+                        'joinColumns' => [
+                            [
+                                'name' => 'modulo_per_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'privilegioTipousuarios',
+                        'targetEntity' => 'App\\Entity\\ModuloPer',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\PrivilegioTipousuario',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'modulo_per_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'modulo_per_id' => 'modulo_per_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'modulo_per_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

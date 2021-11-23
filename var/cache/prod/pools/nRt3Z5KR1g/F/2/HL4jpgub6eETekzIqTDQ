@@ -1,0 +1,84 @@
+<?php //%255Bb1966339a0677e9410f1c89bc5b74dd3%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'val' => [
+                        0,
+                    ],
+                    'val2' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT m0_.id AS id_0, m0_.nombre AS nombre_1, m0_.descripcion AS descripcion_2, m0_.empresa_id AS empresa_id_3, m0_.modulo_id AS modulo_id_4 FROM modulo_per m0_ INNER JOIN modulo m1_ ON m0_.modulo_id = m1_.id WHERE m1_.nombre = ? AND m0_.empresa_id = ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'm' => 'App\\Entity\\ModuloPer',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'nombre_1' => 'nombre',
+                    'descripcion_2' => 'descripcion',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'empresa_id_3' => 'integer',
+                    'modulo_id_4' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'm' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'empresa_id_3' => 'empresa_id',
+                    'modulo_id_4' => 'modulo_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'm',
+                    'nombre_1' => 'm',
+                    'descripcion_2' => 'm',
+                    'empresa_id_3' => 'm',
+                    'modulo_id_4' => 'm',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\ModuloPer',
+                    'nombre_1' => 'App\\Entity\\ModuloPer',
+                    'descripcion_2' => 'App\\Entity\\ModuloPer',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

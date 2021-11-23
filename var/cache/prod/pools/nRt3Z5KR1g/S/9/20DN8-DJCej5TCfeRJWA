@@ -1,0 +1,99 @@
+<?php //%255B6aba26c5802651b5303a1aa4bbb784f2%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'contra' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT c0_.id AS id_0, c0_.numero AS numero_1, c0_.fecha_pago AS fecha_pago_2, c0_.monto AS monto_3, c0_.pagado AS pagado_4, c0_.anular AS anular_5, c0_.fecha_anulacion AS fecha_anulacion_6, c0_.is_multa AS is_multa_7, c0_.usuario_anulacion_id AS usuario_anulacion_id_8, c0_.contrato_id AS contrato_id_9, c0_.anexo_id AS anexo_id_10 FROM cuota c0_ WHERE c0_.contrato_id = ? ORDER BY c0_.numero DESC LIMIT 1',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'c' => 'App\\Entity\\Cuota',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'numero_1' => 'numero',
+                    'fecha_pago_2' => 'fechaPago',
+                    'monto_3' => 'monto',
+                    'pagado_4' => 'pagado',
+                    'anular_5' => 'anular',
+                    'fecha_anulacion_6' => 'fechaAnulacion',
+                    'is_multa_7' => 'isMulta',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'usuario_anulacion_id_8' => 'integer',
+                    'contrato_id_9' => 'integer',
+                    'anexo_id_10' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'c' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'usuario_anulacion_id_8' => 'usuario_anulacion_id',
+                    'contrato_id_9' => 'contrato_id',
+                    'anexo_id_10' => 'anexo_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'c',
+                    'numero_1' => 'c',
+                    'fecha_pago_2' => 'c',
+                    'monto_3' => 'c',
+                    'pagado_4' => 'c',
+                    'anular_5' => 'c',
+                    'fecha_anulacion_6' => 'c',
+                    'is_multa_7' => 'c',
+                    'usuario_anulacion_id_8' => 'c',
+                    'contrato_id_9' => 'c',
+                    'anexo_id_10' => 'c',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Cuota',
+                    'numero_1' => 'App\\Entity\\Cuota',
+                    'fecha_pago_2' => 'App\\Entity\\Cuota',
+                    'monto_3' => 'App\\Entity\\Cuota',
+                    'pagado_4' => 'App\\Entity\\Cuota',
+                    'anular_5' => 'App\\Entity\\Cuota',
+                    'fecha_anulacion_6' => 'App\\Entity\\Cuota',
+                    'is_multa_7' => 'App\\Entity\\Cuota',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

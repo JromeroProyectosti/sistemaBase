@@ -1,0 +1,200 @@
+<?php //%255BApp%255CEntity%255CAgendaObservacion%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\AgendaObservacion',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\AgendaObservacion',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\AgendaObservacionRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'fechaRegistro' => [
+                        'fieldName' => 'fechaRegistro',
+                        'type' => 'datetime',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'fecha_registro',
+                    ],
+                    'observacion' => [
+                        'fieldName' => 'observacion',
+                        'type' => 'text',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'observacion',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'fecha_registro' => 'fechaRegistro',
+                    'observacion' => 'observacion',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'fechaRegistro' => 'fecha_registro',
+                    'observacion' => 'observacion',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'agenda_observacion',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'agenda' => [
+                        'fieldName' => 'agenda',
+                        'joinColumns' => [
+                            [
+                                'name' => 'agenda_id',
+                                'unique' => false,
+                                'nullable' => false,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'agendaObservacions',
+                        'targetEntity' => 'App\\Entity\\Agenda',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\AgendaObservacion',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'agenda_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'agenda_id' => 'agenda_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'agenda_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'usuarioRegistro' => [
+                        'fieldName' => 'usuarioRegistro',
+                        'joinColumns' => [
+                            [
+                                'name' => 'usuario_registro_id',
+                                'unique' => false,
+                                'nullable' => false,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'agendaObservacions',
+                        'targetEntity' => 'App\\Entity\\Usuario',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\AgendaObservacion',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'usuario_registro_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'usuario_registro_id' => 'usuario_registro_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'usuario_registro_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'status' => [
+                        'fieldName' => 'status',
+                        'joinColumns' => [
+                            [
+                                'name' => 'status_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'agendaObservacions',
+                        'targetEntity' => 'App\\Entity\\AgendaStatus',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\AgendaObservacion',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'status_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'status_id' => 'status_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'status_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

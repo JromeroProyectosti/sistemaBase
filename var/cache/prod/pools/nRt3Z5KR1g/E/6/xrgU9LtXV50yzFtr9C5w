@@ -1,0 +1,84 @@
+<?php //%255B6250273c70b9e3e857e98a8f4b8328b1%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'val2' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT c0_.id AS id_0, c0_.nombre AS nombre_1, c0_.fecha_creacion AS fecha_creacion_2, c0_.fecha_ultimamodificacion AS fecha_ultimamodificacion_3, c0_.page_id AS page_id_4, c0_.empresa_id AS empresa_id_5 FROM cuenta c0_ WHERE c0_.empresa_id = ? ORDER BY c0_.id ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'c' => 'App\\Entity\\Cuenta',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'nombre_1' => 'nombre',
+                    'fecha_creacion_2' => 'fechaCreacion',
+                    'fecha_ultimamodificacion_3' => 'fechaUltimamodificacion',
+                    'page_id_4' => 'pageId',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'empresa_id_5' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'c' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'empresa_id_5' => 'empresa_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'c',
+                    'nombre_1' => 'c',
+                    'fecha_creacion_2' => 'c',
+                    'fecha_ultimamodificacion_3' => 'c',
+                    'page_id_4' => 'c',
+                    'empresa_id_5' => 'c',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Cuenta',
+                    'nombre_1' => 'App\\Entity\\Cuenta',
+                    'fecha_creacion_2' => 'App\\Entity\\Cuenta',
+                    'fecha_ultimamodificacion_3' => 'App\\Entity\\Cuenta',
+                    'page_id_4' => 'App\\Entity\\Cuenta',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

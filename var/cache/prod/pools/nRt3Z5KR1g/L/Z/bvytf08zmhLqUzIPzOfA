@@ -1,0 +1,257 @@
+<?php //%255BApp%255CEntity%255CMenu%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Menu',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Menu',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\MenuRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'nombre' => [
+                        'fieldName' => 'nombre',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'nombre',
+                    ],
+                    'icono' => [
+                        'fieldName' => 'icono',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'icono',
+                    ],
+                    'orden' => [
+                        'fieldName' => 'orden',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'orden',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'nombre' => 'nombre',
+                    'icono' => 'icono',
+                    'orden' => 'orden',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'nombre' => 'nombre',
+                    'icono' => 'icono',
+                    'orden' => 'orden',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'menu',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'empresa' => [
+                        'fieldName' => 'empresa',
+                        'joinColumns' => [
+                            [
+                                'name' => 'empresa_id',
+                                'unique' => false,
+                                'nullable' => false,
+                                'onDelete' => null,
+                                'columnDefinition' => null,
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'menus',
+                        'targetEntity' => 'App\\Entity\\Empresa',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Menu',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'empresa_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'empresa_id' => 'empresa_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'empresa_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'dependeDe' => [
+                        'fieldName' => 'dependeDe',
+                        'joinColumns' => [
+                            [
+                                'name' => 'depende_de_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'menus',
+                        'targetEntity' => 'App\\Entity\\Menu',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Menu',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'depende_de_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'depende_de_id' => 'depende_de_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'depende_de_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'menus' => [
+                        'fieldName' => 'menus',
+                        'mappedBy' => 'dependeDe',
+                        'targetEntity' => 'App\\Entity\\Menu',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\Menu',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                    'menuCabezera' => [
+                        'fieldName' => 'menuCabezera',
+                        'joinColumns' => [
+                            [
+                                'name' => 'menu_cabezera_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'menus',
+                        'targetEntity' => 'App\\Entity\\MenuCabezera',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Menu',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'menu_cabezera_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'menu_cabezera_id' => 'menu_cabezera_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'menu_cabezera_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'modulo' => [
+                        'fieldName' => 'modulo',
+                        'joinColumns' => [
+                            [
+                                'name' => 'modulo_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'menus',
+                        'targetEntity' => 'App\\Entity\\Modulo',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Menu',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'modulo_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'modulo_id' => 'modulo_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'modulo_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

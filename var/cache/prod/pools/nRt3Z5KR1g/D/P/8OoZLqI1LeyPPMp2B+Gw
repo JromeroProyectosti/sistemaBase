@@ -1,0 +1,140 @@
+<?php //%255BApp%255CEntity%255CConfiguracion%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Configuracion',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Configuracion',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\ConfiguracionRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'diaFondoFijo' => [
+                        'fieldName' => 'diaFondoFijo',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'dia_fondo_fijo',
+                    ],
+                    'host' => [
+                        'fieldName' => 'host',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'host',
+                    ],
+                    'accessToken' => [
+                        'fieldName' => 'accessToken',
+                        'type' => 'text',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'access_token',
+                    ],
+                    'verifyToken' => [
+                        'fieldName' => 'verifyToken',
+                        'type' => 'text',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'verify_token',
+                    ],
+                    'lotes' => [
+                        'fieldName' => 'lotes',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'lotes',
+                    ],
+                    'valorMulta' => [
+                        'fieldName' => 'valorMulta',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'valor_multa',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'dia_fondo_fijo' => 'diaFondoFijo',
+                    'host' => 'host',
+                    'access_token' => 'accessToken',
+                    'verify_token' => 'verifyToken',
+                    'lotes' => 'lotes',
+                    'valor_multa' => 'valorMulta',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'diaFondoFijo' => 'dia_fondo_fijo',
+                    'host' => 'host',
+                    'accessToken' => 'access_token',
+                    'verifyToken' => 'verify_token',
+                    'lotes' => 'lotes',
+                    'valorMulta' => 'valor_multa',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'configuracion',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

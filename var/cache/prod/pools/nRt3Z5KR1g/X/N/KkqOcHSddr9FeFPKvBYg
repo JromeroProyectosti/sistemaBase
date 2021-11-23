@@ -1,0 +1,212 @@
+<?php //%255BApp%255CEntity%255CUsuarioNoDisponible%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\UsuarioNoDisponible',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\UsuarioNoDisponible',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\UsuarioNoDisponibleRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'fecha' => [
+                        'fieldName' => 'fecha',
+                        'type' => 'date',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'fecha',
+                    ],
+                    'horaInicio' => [
+                        'fieldName' => 'horaInicio',
+                        'type' => 'time',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'hora_inicio',
+                    ],
+                    'horaFin' => [
+                        'fieldName' => 'horaFin',
+                        'type' => 'time',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'hora_fin',
+                    ],
+                    'fechaInicio' => [
+                        'fieldName' => 'fechaInicio',
+                        'type' => 'date',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'fecha_inicio',
+                    ],
+                    'fechaFin' => [
+                        'fieldName' => 'fechaFin',
+                        'type' => 'date',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'fecha_fin',
+                    ],
+                    'anio' => [
+                        'fieldName' => 'anio',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'anio',
+                    ],
+                    'mes' => [
+                        'fieldName' => 'mes',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'mes',
+                    ],
+                    'dia' => [
+                        'fieldName' => 'dia',
+                        'type' => 'integer',
+                        'scale' => 0,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => true,
+                        'precision' => 0,
+                        'columnName' => 'dia',
+                    ],
+                    'concepto' => [
+                        'fieldName' => 'concepto',
+                        'type' => 'string',
+                        'scale' => 0,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => 0,
+                        'columnName' => 'concepto',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'fecha' => 'fecha',
+                    'hora_inicio' => 'horaInicio',
+                    'hora_fin' => 'horaFin',
+                    'fecha_inicio' => 'fechaInicio',
+                    'fecha_fin' => 'fechaFin',
+                    'anio' => 'anio',
+                    'mes' => 'mes',
+                    'dia' => 'dia',
+                    'concepto' => 'concepto',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'fecha' => 'fecha',
+                    'horaInicio' => 'hora_inicio',
+                    'horaFin' => 'hora_fin',
+                    'fechaInicio' => 'fecha_inicio',
+                    'fechaFin' => 'fecha_fin',
+                    'anio' => 'anio',
+                    'mes' => 'mes',
+                    'dia' => 'dia',
+                    'concepto' => 'concepto',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'usuario_no_disponible',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'usuario' => [
+                        'fieldName' => 'usuario',
+                        'joinColumns' => [
+                            [
+                                'name' => 'usuario_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [],
+                        'inversedBy' => 'usuarioNoDisponibles',
+                        'targetEntity' => 'App\\Entity\\Usuario',
+                        'fetch' => 2,
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\UsuarioNoDisponible',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'usuario_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'usuario_id' => 'usuario_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'usuario_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
