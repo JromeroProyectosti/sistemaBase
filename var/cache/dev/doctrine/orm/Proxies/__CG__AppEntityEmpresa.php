@@ -66,10 +66,10 @@ class Empresa extends \App\Entity\Empresa implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'rol', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'rut', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'logo', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaIngreso', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaUltimamodificacion', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaVigencia', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'cuentas', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'modulos', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'acciones', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'menus', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'logoAlt', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'moduloPers', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'menuCabezeras', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'usuarioTipos', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'usuarioCategorias', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'estadoCivils', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'situacionLaborals', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'estrategiaJuridicas', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'escrituras', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'juzgados', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'reunions', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'pais', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'contratoViviendas', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'contratoVehiculos'];
+            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'rol', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'rut', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'logo', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaIngreso', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaUltimamodificacion', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaVigencia', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'cuentas', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'modulos', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'acciones', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'menus', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'logoAlt', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'moduloPers', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'menuCabezeras', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'usuarioTipos', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'usuarioCategorias', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'pais'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'rol', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'rut', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'logo', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaIngreso', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaUltimamodificacion', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaVigencia', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'cuentas', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'modulos', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'acciones', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'menus', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'logoAlt', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'moduloPers', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'menuCabezeras', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'usuarioTipos', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'usuarioCategorias', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'estadoCivils', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'situacionLaborals', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'estrategiaJuridicas', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'escrituras', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'juzgados', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'reunions', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'pais', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'contratoViviendas', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'contratoVehiculos'];
+        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'rol', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'rut', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'logo', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaIngreso', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaUltimamodificacion', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'fechaVigencia', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'cuentas', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'modulos', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'acciones', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'menus', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'logoAlt', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'moduloPers', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'menuCabezeras', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'usuarioTipos', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'usuarioCategorias', '' . "\0" . 'App\\Entity\\Empresa' . "\0" . 'pais'];
     }
 
     /**
@@ -321,28 +321,6 @@ class Empresa extends \App\Entity\Empresa implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFechaUltimamodificacion', [$fechaUltimamodificacion]);
 
         return parent::setFechaUltimamodificacion($fechaUltimamodificacion);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getFechaVigencia(): ?\DateTimeInterface
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFechaVigencia', []);
-
-        return parent::getFechaVigencia();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setFechaVigencia(\DateTimeInterface $fechaVigencia): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFechaVigencia', [$fechaVigencia]);
-
-        return parent::setFechaVigencia($fechaVigencia);
     }
 
     /**
@@ -612,204 +590,6 @@ class Empresa extends \App\Entity\Empresa implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function getEstadoCivils(): \Doctrine\Common\Collections\Collection
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEstadoCivils', []);
-
-        return parent::getEstadoCivils();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addEstadoCivil(\App\Entity\EstadoCivil $estadoCivil): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addEstadoCivil', [$estadoCivil]);
-
-        return parent::addEstadoCivil($estadoCivil);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeEstadoCivil(\App\Entity\EstadoCivil $estadoCivil): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeEstadoCivil', [$estadoCivil]);
-
-        return parent::removeEstadoCivil($estadoCivil);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getSituacionLaborals(): \Doctrine\Common\Collections\Collection
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSituacionLaborals', []);
-
-        return parent::getSituacionLaborals();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addSituacionLaboral(\App\Entity\SituacionLaboral $situacionLaboral): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addSituacionLaboral', [$situacionLaboral]);
-
-        return parent::addSituacionLaboral($situacionLaboral);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeSituacionLaboral(\App\Entity\SituacionLaboral $situacionLaboral): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeSituacionLaboral', [$situacionLaboral]);
-
-        return parent::removeSituacionLaboral($situacionLaboral);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getEstrategiaJuridicas(): \Doctrine\Common\Collections\Collection
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEstrategiaJuridicas', []);
-
-        return parent::getEstrategiaJuridicas();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addEstrategiaJuridica(\App\Entity\EstrategiaJuridica $estrategiaJuridica): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addEstrategiaJuridica', [$estrategiaJuridica]);
-
-        return parent::addEstrategiaJuridica($estrategiaJuridica);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeEstrategiaJuridica(\App\Entity\EstrategiaJuridica $estrategiaJuridica): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeEstrategiaJuridica', [$estrategiaJuridica]);
-
-        return parent::removeEstrategiaJuridica($estrategiaJuridica);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getEscrituras(): \Doctrine\Common\Collections\Collection
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEscrituras', []);
-
-        return parent::getEscrituras();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addEscritura(\App\Entity\Escritura $escritura): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addEscritura', [$escritura]);
-
-        return parent::addEscritura($escritura);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeEscritura(\App\Entity\Escritura $escritura): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeEscritura', [$escritura]);
-
-        return parent::removeEscritura($escritura);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getJuzgados(): \Doctrine\Common\Collections\Collection
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getJuzgados', []);
-
-        return parent::getJuzgados();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addJuzgado(\App\Entity\Juzgado $juzgado): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addJuzgado', [$juzgado]);
-
-        return parent::addJuzgado($juzgado);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeJuzgado(\App\Entity\Juzgado $juzgado): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeJuzgado', [$juzgado]);
-
-        return parent::removeJuzgado($juzgado);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getReunions(): \Doctrine\Common\Collections\Collection
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReunions', []);
-
-        return parent::getReunions();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addReunion(\App\Entity\Reunion $reunion): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addReunion', [$reunion]);
-
-        return parent::addReunion($reunion);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeReunion(\App\Entity\Reunion $reunion): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeReunion', [$reunion]);
-
-        return parent::removeReunion($reunion);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getPais(): \Doctrine\Common\Collections\Collection
     {
 
@@ -838,72 +618,6 @@ class Empresa extends \App\Entity\Empresa implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'removePai', [$pai]);
 
         return parent::removePai($pai);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getContratoViviendas(): \Doctrine\Common\Collections\Collection
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getContratoViviendas', []);
-
-        return parent::getContratoViviendas();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addContratoVivienda(\App\Entity\ContratoVivienda $contratoVivienda): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addContratoVivienda', [$contratoVivienda]);
-
-        return parent::addContratoVivienda($contratoVivienda);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeContratoVivienda(\App\Entity\ContratoVivienda $contratoVivienda): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeContratoVivienda', [$contratoVivienda]);
-
-        return parent::removeContratoVivienda($contratoVivienda);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getContratoVehiculos(): \Doctrine\Common\Collections\Collection
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getContratoVehiculos', []);
-
-        return parent::getContratoVehiculos();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function addContratoVehiculo(\App\Entity\ContratoVehiculo $contratoVehiculo): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addContratoVehiculo', [$contratoVehiculo]);
-
-        return parent::addContratoVehiculo($contratoVehiculo);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function removeContratoVehiculo(\App\Entity\ContratoVehiculo $contratoVehiculo): \App\Entity\Empresa
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeContratoVehiculo', [$contratoVehiculo]);
-
-        return parent::removeContratoVehiculo($contratoVehiculo);
     }
 
 }

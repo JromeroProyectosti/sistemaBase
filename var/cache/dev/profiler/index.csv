@@ -9235,3 +9235,12 @@ a17359,::1,POST,https://localhost:8000/login,1637637838,,302
 58f865,::1,GET,https://localhost:8000/_fragment?_path=_format%3Dhtml%26_locale%3Des%26_controller%3DApp%255CController%255CChangecompController%253A%253Aindex,1637637839,be3d11,200
 fa3ddf,::1,GET,https://localhost:8000/,1637637840,be3d11,500
 be3d11,::1,GET,https://localhost:8000/,1637637840,,500
+c9af87,::1,GET,https://localhost:8000/modulo,1637684283,,301
+e5f4e9,::1,GET,https://localhost:8000/modulo/,1637684293,5c912b,500
+5c912b,::1,GET,https://localhost:8000/modulo/,1637684293,,500
+1b429b,::1,GET,https://localhost:8000/_fragment?_path=_format%3Dhtml%26_locale%3Des%26_controller%3DApp%255CController%255CChangecompController%253A%253Aindex,1637684562,650780,200
+e8ddf8,::1,GET,https://localhost:8000/modulo/,1637684562,650780,500
+650780,::1,GET,https://localhost:8000/modulo/,1637684562,,500
+7fa019,::1,GET,https://localhost:8000/_fragment?_path=_format%3Dhtml%26_locale%3Des%26_controller%3DApp%255CController%255CChangecompController%253A%253Aindex,1637695694,0853fc,200
+8744a2,::1,GET,https://localhost:8000/modulo/,1637695695,0853fc,500
+0853fc,::1,GET,https://localhost:8000/modulo/,1637695695,,500
